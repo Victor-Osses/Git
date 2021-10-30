@@ -3,11 +3,14 @@ git init 								-> Inicializa o repositório / Cria um repositório do git
 git config --global user.email "e-mail da minha conta do git" 		-> É necessário para dar o commit
 git config --global user.name "Meu nome" 				-> É necessário para dar o commit
 git status 								-> Exibe as alterações
-git add "nomeArquivo" ou git add . 					-> Adiciona as alterações ao controle de versionamento
 git rm <file> 								-> Deleta um arquivo
+git add "nomeArquivo" ou git add . 					-> Adiciona as alterações ao controle de versionamento
+git restore --staged <file>						-> Retira um arquivo da área de staged (inverso do git add <file>)
 git commit -m "Mensagem do commit" 					-> Cria uma versão do código
 git remote add origin <url> 						-> Faz a conexão com um repositório no GitHub
 git remote -v 								-> Mostra todas as conexões
 git remote rm <remote> 							-> Deleta uma conexão com um repositório
 git push --set-upstream <remote> <branch> 				-> Indica para qual branch enviar a versão do código (necessário só na primeira vez)
-git push <remote> <branch> 						-> Envia a versão do código para o repositório e branch indicados.
+git push <remote> <branch> 						-> Envia a versão do código para o repositório e branch indicados
+git reflog								-> Mostra o histórico de versões (commits)
+git reset --hard <ID da versão>						-> Volta para uma versão a apartir do seu ID (git reflog exbibe o ID das versões)
