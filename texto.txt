@@ -14,3 +14,6 @@ git push --set-upstream <remote> <branch> 				-> Indica para qual branch enviar 
 git push <remote> <branch> 						-> Envia a versão do código para o repositório e branch indicados
 git reflog								-> Mostra o histórico de versões (commits)
 git reset --hard <ID da versão>						-> Volta para uma versão a apartir do seu ID (git reflog exbibe o ID das versões)
+git branch <nome>							-> Cria uma branch
+git branch								-> Lista as branchs 
+git checkout <nome da branch>						-> Troca de branch
