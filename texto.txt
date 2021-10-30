@@ -10,10 +10,13 @@ git commit -m "Mensagem do commit" 					-> Cria uma versão do código
 git remote add origin <url> 						-> Faz a conexão com um repositório no GitHub
 git remote -v 								-> Mostra todas as conexões
 git remote rm <remote> 							-> Deleta uma conexão com um repositório
-git push --set-upstream <remote> <branch> 				-> Indica para qual branch enviar a versão do código (necessário só na primeira vez)
+git push --set-upstream <remote> <branch> 				-> Indica para qual branch enviar a versão do código 
 git push <remote> <branch> 						-> Envia a versão do código para o repositório e branch indicados
 git reflog								-> Mostra o histórico de versões (commits)
 git reset --hard <ID da versão>						-> Volta para uma versão a apartir do seu ID (git reflog exbibe o ID das versões)
 git branch <nome>							-> Cria uma branch
 git branch								-> Lista as branchs 
 git checkout <nome da branch>						-> Troca de branch
+Para mesclar duas branchs:
+- Entrar na branch que vai receber as atualizações
+- git merge <nome da branch com a qual vai se mesclar>			-> Mescla duas branchs
