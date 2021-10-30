@@ -20,3 +20,4 @@ git checkout <nome da branch>						-> Troca de branch
 Para mesclar duas branchs:
 - Entrar na branch que vai receber as atualizações
 - git merge <nome da branch com a qual vai se mesclar>			-> Mescla duas branchs
+- git push
