@@ -10,6 +10,7 @@ git commit -m "Mensagem do commit" 					-> Cria uma versão do código
 git remote add origin <url> 						-> Faz a conexão com um repositório no GitHub
 git remote -v 								-> Mostra todas as conexões
 git remote rm <remote> 							-> Deleta uma conexão com um repositório
+git pull								-> Atualiza as informações locais com as do repositório
 git push --set-upstream <remote> <branch> 				-> Indica para qual branch enviar a versão do código 
 git push <remote> <branch> 						-> Envia a versão do código para o repositório e branch indicados
 git reflog								-> Mostra o histórico de versões (commits)
@@ -18,6 +19,12 @@ git branch <nome>							-> Cria uma branch
 git branch								-> Lista as branchs 
 git checkout <nome da branch>						-> Troca de branch
 Para mesclar duas branchs:
-- Entrar na branch que vai receber as atualizações
-- git merge <nome da branch com a qual vai se mesclar>			-> Mescla duas branchs
-- git push
+- git pull da branch principal
+- gerar uma nova branch a partir da branch principal
+- trabalhar e adicionar novas funcionalidade na nova branch que criou
+- finalizar o trabalho na branch temporária (add, commit, push)
+- git checkout na branch principal
+- git pull
+- Mergiar (git merge <nome da branch>) o código da branch temporária com a branch principal (depois de testar e ver se funciona, claro)
+- git push da branch principal
+git checkout -b <nome da nova branch> <nome da branch base>		-> Cria uma nova branch contendo todo o conteúdo da branch base
