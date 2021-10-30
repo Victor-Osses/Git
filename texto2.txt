@@ -1,1 +1,8 @@
-Não sei o que escrever
+Aprendendo a fazer um pull request
+- Primeiramente, um pull request é tipo um merge democrático, ou seja, alguém precisa validar meu código antes do merge
+- Dessa forma, eu faço minhas alterações em uma branch e faço meu add e commit
+- Feito isso, dou um push no meu código e vou lá no github configurar umas coisas
+- A alteração vai aparecer no repositório do git, daí eu clico em "Compare & pull request"
+- Agora eu indico quem eu quero mergiar com quem (master com branch2, por exemplo)
+- Adiciona um título e uma descrição e envio a solicitação para alguém validar meu commit
+- Daí eu espero alguém validar e fazer o merge (ou exigir correções e fazer outro pull request)
