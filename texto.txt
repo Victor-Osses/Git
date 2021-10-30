@@ -6,11 +6,11 @@ git status 								-> Exibe as alterações
 git rm <file> 								-> Deleta um arquivo
 git add "nomeArquivo" ou git add . 					-> Adiciona as alterações ao controle de versionamento
 git restore --staged <file>						-> Retira um arquivo da área de staged (inverso do git add <file>)
-git commit -m "Mensagem do commit" 					-> Cria uma versão do código
+git commit -m "Mensagem do commit" 					-> Cria uma versão do código com uma mensagem
 git remote add origin <url> 						-> Faz a conexão com um repositório no GitHub
 git remote -v 								-> Mostra todas as conexões
 git remote rm <remote> 							-> Deleta uma conexão com um repositório
-git pull								-> Atualiza as informações locais com as do repositório
+git pull								-> Atualiza as informações locais da branch ativa com as do repositório
 git push --set-upstream <remote> <branch> 				-> Indica para qual branch enviar a versão do código 
 git push <remote> <branch> 						-> Envia a versão do código para o repositório e branch indicados
 git reflog								-> Mostra o histórico de versões (commits)
@@ -27,4 +27,4 @@ Para mesclar duas branchs:
 - git pull
 - Mergiar (git merge <nome da branch>) o código da branch temporária com a branch principal (depois de testar e ver se funciona, claro)
 - git push da branch principal
-git checkout -b <nome da nova branch> <nome da branch base>		-> Cria uma nova branch contendo todo o conteúdo da branch base
+git checkout -b <nome da branch de origem> <nome da novabranch>		-> Permite mudar e criar uma nova branch com base em outra
