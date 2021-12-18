@@ -28,3 +28,9 @@ Para mesclar duas branchs:
 - Mergiar (git merge <nome da branch>) o código da branch temporária com a branch principal (depois de testar e ver se funciona, claro)
 - git push da branch principal
 git checkout -b <nome da branch de origem> <nome da novabranch>		-> Permite mudar e criar uma nova branch com base em outra
+
+Erros:
+
+- fatal: refusing to merge unrelated histories
+Por que ocorre: Ocorre quando o git não sabe se o repositório remoto é compátivel com o repositório atual
+Solução: git pull origin master allow-unrelated-histories
